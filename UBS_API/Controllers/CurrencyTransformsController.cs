@@ -52,7 +52,7 @@ namespace UBS_API.Controllers
             base.Dispose(disposing);
         }
 
-        public IHttpActionResult GetTest()
+        public IHttpActionResult GetTest236()
         {
             return ok();
         }
