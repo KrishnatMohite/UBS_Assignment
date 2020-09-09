@@ -26,7 +26,7 @@ namespace UBS_API.Controllers
             }
             if (db.CurrencyTransforms.Any(ct => ct.CurrencyAmt == id))
             {
-                return Ok(db.CurrencyTransforms.FirstOrDefault(ct=>ct.CurrencyAmt == id));
+                return Ok(db.CurrencyTransforms.FirstOrDefault(ct => ct.CurrencyAmt == id));
             }
             try
             {
@@ -50,6 +50,11 @@ namespace UBS_API.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        public IHttpActionResult GetTest()
+        {
+            return ok();
         }
 
     }
